@@ -6,7 +6,7 @@ The dating app industry is growing, but there seem to be a lot of negative senti
 
 ### Business Understanding and Data Understanding
 
-There were 366 million dating app users in 2022, up from 324 million in 2021, so this almost $6 billion dollar industry is continuing to grow. However, 88% of users are disatisfied with what they find on dating apps and they have been touted as one of the main causes of depression, anxiety, stress, and body dissatisfaction. Where are all these apps going wrong and what can they be doing better? Based on reviews, is the sentiment around the top dating apps truly this negative?
+There were 366 million dating app users in 2022, up from 324 million in 2021, so this $4.3 billion dollar industry is continuing to grow. However, 88% of users are disatisfied with what they find on dating apps and they have been touted as one of the main causes of depression, anxiety, stress, and body dissatisfaction. Where are all these apps going wrong and what can they be doing better? Based on reviews, is the sentiment around the top dating apps truly this negative?
 
 To dig deeper into this, I am using a dataset from Kaggle, which contains about 682,000 reviews from 2017-2022 on Tinder, Bumble, and Hinge. Each row of this dataset included the name of the reviewer, the review, their rating, whether other users "thumb's up-ed" their review, the date and time, and the app they were reviewing.
 
@@ -25,12 +25,29 @@ So for my final model, I decided to go with the Linear SVC as it works well on h
 
 ### Conclusion
 
-I would reccomend that this model be used to predict the sentiment (positive = 1 or negative = 0) of new reviews.
+I would reccomend that this model be used to predict the sentiment (positive = 1 or negative = 0) of new reviews. ANd once I can get the deployment to work properly it could be used to determine the appropriate dating app for users.
 
+Some next steps that I would like to take to take this project further:
+- Explore reviews and their sentiment further
+    Are there other external factors, such as the global pandemic in 2020, that are affecting these reviews?
+    Want to look at the timing of the majority to guage this.
+    Or is it even based on location?
+    Etc
+- Translating non-English reviews
+- Dig into other apps
+    Explore untraditional dating style apps such as Feeld, Pure, etc.
+    How do their reviews/ sentiments compare?
+- Build out deployment
 
-Conclusion
-How would you recommend that your model be used?
-Repository Navigation
-An explanation of the repository organization
-Links to the final notebook and presentation
-As a reminder, the Markdown notation for a link is [link text](/path/to/file)
+### Repository Navigation
+
+In my repository you will find:
+- .gitignore
+- Dating App Sentiment Analysis.pdf, my presentation on this project
+- DatingAppReviewsDataset.csv, which is the dataset used for this project
+- Dating_Apps.ipynb, the notebook of work for this project
+- this README.md
+
+### Links
+![Dating_App_Sentiment_Analysis.pdf](/Users/aheinke/Documents/Flatiron/Dating_App_Sentiment/Dating_App_Sentiment_Analysis.pdf)
+![Dating_Apps.ipynb](/Users/aheinke/Documents/Flatiron/Dating_App_Sentiment/Dating_Apps.ipynb)
